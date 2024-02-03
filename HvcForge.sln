@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{233EA989-24A6-486F-8E6A-958AB5A29C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HvcForge", "src\HvcForge\HvcForge.csproj", "{307CCEF0-A387-4BBA-9480-6D7907F0BA16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59000F0A-A2FD-4579-B62F-5221C310CF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HvcForgeTests", "tests\units\HvcForgeTests.csproj", "{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{307CCEF0-A387-4BBA-9480-6D7907F0BA16} = {233EA989-24A6-486F-8E6A-958AB5A29C21}
+		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF} = {59000F0A-A2FD-4579-B62F-5221C310CF19}
+	EndGlobalSection
+EndGlobal
