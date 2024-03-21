@@ -36,7 +36,7 @@ public sealed class NewHvcForgeInfo : PSCmdlet
 
     protected override void EndProcessing()
     {
-        WriteObject(new SSHInfo(
+        WriteObject(new HvcInfo(
             VMName,
             Port,
             _credential,

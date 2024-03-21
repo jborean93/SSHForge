@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHForge", "src\SSHForge\SS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59000F0A-A2FD-4579-B62F-5221C310CF19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHForgeTests", "tests\units\SSHForgeTests.csproj", "{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,13 +22,8 @@ Global
 		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{307CCEF0-A387-4BBA-9480-6D7907F0BA16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{307CCEF0-A387-4BBA-9480-6D7907F0BA16} = {233EA989-24A6-486F-8E6A-958AB5A29C21}
-		{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF} = {59000F0A-A2FD-4579-B62F-5221C310CF19}
 	EndGlobalSection
 EndGlobal
