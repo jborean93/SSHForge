@@ -7,22 +7,22 @@ param ([string]$Prompt)
 
 $ErrorActionPreference = 'Stop'
 
-if ($env:HVCFORGE_RID) {
-    # If HVCFORGE_RID is set the password is stored in the runspace specified
+if ($env:SSHFORGE_RID) {
+    # If SSHFORGE_RID is set the password is stored in the runspace specified
     $script = {
         $ErrorActionPreference = 'Stop'
 
         $rs = Get-Runspace -Id $args[0]
         if (-not $rs) {
-            throw "Failed to find runspace $($args[0]) to retrieve sudo password"
+            throw "Failed to find runspace $($args[0]) to retrieve SSH password"
         }
         $rs.SessionStateProxy.GetVariable("ssh")
     }
 
-    $argument = $env:HVCFORGE_RID
+    $argument = $env:SSHFORGE_RID
 }
 else {
-    # If HVCFORGE_RID isn't set we need to prompt for the password
+    # If SSHFORGE_RID isn't set we need to prompt for the password
     $script = {
         $ErrorActionPreference = 'Stop'
 
@@ -38,7 +38,7 @@ else {
     $argument = $Prompt
 }
 
-$ci = [NamedPipeConnectionInfo]::new([int]$env:HVCFORGE_PID)
+$ci = [NamedPipeConnectionInfo]::new([int]$env:SSHFORGE_PID)
 $rs = $ps = $null
 try {
     $rs = [runspacefactory]::CreateRunspace($ci)

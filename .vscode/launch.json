@@ -13,7 +13,7 @@
                 "-NoExit",
                 "-NoProfile",
                 "-Command",
-                "Import-Module ../RemoteForge/output/RemoteForge; Import-Module ./output/HvcForge"
+                "Import-Module ../RemoteForge/output/RemoteForge; Import-Module ./output/SSHForge"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

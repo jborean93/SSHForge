@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{233EA989-24A6-486F-8E6A-958AB5A29C21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HvcForge", "src\HvcForge\HvcForge.csproj", "{307CCEF0-A387-4BBA-9480-6D7907F0BA16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHForge", "src\SSHForge\SSHForge.csproj", "{307CCEF0-A387-4BBA-9480-6D7907F0BA16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59000F0A-A2FD-4579-B62F-5221C310CF19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HvcForgeTests", "tests\units\HvcForgeTests.csproj", "{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHForgeTests", "tests\units\SSHForgeTests.csproj", "{881BE1CC-2265-4EC9-A3EA-ECD1B8039CFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

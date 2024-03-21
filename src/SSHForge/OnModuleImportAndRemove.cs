@@ -1,7 +1,7 @@
 using System.Management.Automation;
 using RemoteForge;
 
-namespace HvcForge;
+namespace SSHForge;
 
 public class OnModuleImportAndRemove : IModuleAssemblyInitializer, IModuleAssemblyCleanup
 {
