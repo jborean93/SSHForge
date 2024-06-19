@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net7.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,4 +13,9 @@
       <HintPath>../../../RemoteForge/output/RemoteForge/0.1.0/bin/net7.0/RemoteForge.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' != 'net7.0' ">
+    <ProjectReference Include="../../../Tmds.Ssh/src/Tmds.Ssh/Tmds.Ssh.csproj" />
+  </ItemGroup>
+
 </Project>

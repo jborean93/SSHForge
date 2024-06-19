@@ -11,7 +11,7 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule = 'bin/net7.0/SSHForge.dll'
+    RootModule = 'SSHForge.psm1'
 
     # Version number of this module.
     ModuleVersion = '0.1.0'
@@ -73,7 +73,7 @@
     CmdletsToExport = @(
         'New-SSHv2ForgeInfo'
         'New-HvcForgeInfo'
-
+        'New-TmdsSshInfo'
     )
 
     # Variables to export from this module
