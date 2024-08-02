@@ -7,6 +7,7 @@ using System.Management.Automation.Runspaces;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace SSHForge;
 
@@ -38,7 +39,7 @@ public sealed class SSHTransport : ProcessTransport
         bool disableHostKeyCheck = false)
     {
         string askPassFile = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
-            ? "ask_pass.bat" : "ask_pass.ps1";
+            ? "ask_pass.bat" : "ask_pass.sh";
         string askPassScript = Path.GetFullPath(Path.Combine(
             Path.GetDirectoryName(typeof(HvcInfo).Assembly.Location)!,
             "..",
@@ -47,6 +48,18 @@ public sealed class SSHTransport : ProcessTransport
         if (!File.Exists(askPassScript))
         {
             throw new FileNotFoundException($"Failed to find {askPassFile} script at '{askPassScript}'");
+        }
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+        {
+            try
+            {
+                Process.Start("chmod", $"+x {askPassScript}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to set execution policy to {askPassScript}: {ex.Message}");
+            }
         }
 
         List<string> sshArgs = new();
